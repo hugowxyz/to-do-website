@@ -1,0 +1,142 @@
+.flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex-col {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main-container {
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+}
+
+.main-container .header {
+  padding: 31px;
+  border-bottom: 1px solid black;
+}
+
+.main-container .header h2 {
+  font-size: 2em;
+}
+
+.main-container .task-manager-container {
+  height: 840x;
+  overflow-y: scroll;
+  padding: 25px;
+}
+
+.main-container .task-manager-container .overdue, .main-container .task-manager-container .today, .main-container .task-manager-container .tomorrow, .main-container .task-manager-container .this-week, .main-container .task-manager-container .upcoming {
+  margin-bottom: 25px;
+}
+
+.main-container .task-manager-container .overdue h3, .main-container .task-manager-container .today h3, .main-container .task-manager-container .tomorrow h3, .main-container .task-manager-container .this-week h3, .main-container .task-manager-container .upcoming h3 {
+  font-size: 2em;
+}
+
+.main-container .task-manager-container .overdue h3:after, .main-container .task-manager-container .today h3:after, .main-container .task-manager-container .tomorrow h3:after, .main-container .task-manager-container .this-week h3:after, .main-container .task-manager-container .upcoming h3:after {
+  content: "";
+  display: block;
+  background: black;
+  margin-top: 5px;
+  margin-bottom: 25px;
+  width: 100px;
+  height: 1px;
+}
+
+.main-container .task-manager-container .task-container {
+  margin-bottom: 35px;
+}
+
+.main-container .task-manager-container .task-container .date, .main-container .task-manager-container .task-container .title {
+  padding: 10px;
+  border-right: 1px solid grey;
+}
+
+.main-container .task-manager-container .task-container .description {
+  padding: 15px;
+  color: grey;
+}
+
+.side-nav {
+  height: 100vh;
+  border-right: 1px solid black;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.side-nav .logo {
+  padding: 15px;
+  /*
+        h3:after {
+            content: "";
+            display: block;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            background: black;
+            width: 100%;
+            height: 1px;
+        }
+        */
+}
+
+.side-nav .logo h1 {
+  font-size: 2em;
+}
+
+.side-nav .logo h3 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+.side-nav .create-new-btn {
+  padding-left: 30px;
+  margin-bottom: 50px;
+}
+
+.side-nav .create-new-btn button {
+  border: 1px solid black;
+  border-radius: 15px;
+  width: 200px;
+  padding: 15px;
+}
+
+.side-nav .menu {
+  padding-left: 30px;
+}
+
+.side-nav .menu h3 {
+  font-size: 1.7em;
+}
+
+.side-nav .menu h3:after {
+  content: "";
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  background-color: black;
+  width: 50px;
+  height: 2px;
+}
+
+.side-nav .menu p {
+  display: inline-block;
+  font-size: 1.2em;
+  margin-left: 5px;
+}
+
+.side-nav .menu p:hover {
+  cursor: pointer;
+}
+
+.side-nav .image-container img {
+  width: 25px;
+}
+/*# sourceMappingURL=style.css.map */
