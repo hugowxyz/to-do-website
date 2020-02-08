@@ -4,123 +4,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="../src/style/reset.css">
     <link rel="stylesheet" href="../src/style/style.css">
-    <title>Organise.io | Organise yourself</title>
+    <title>Document</title>
 </head>
-
 <body>
-    <div class="flex-container">
-        <div class="side-nav flex-item">
-            <div class="logo">
-                <h1>Organise.io</h1>
-                <h3>Efficency at its finest</h3>
-            </div>
-            <div class="create-new-btn">
-                <button id="new-task-btn"> Create New Task </button>
-            </div>
-            <div class="menu">
-                <h3>Sort by</h3>
-                <ul>
-                    <li><span class="image-container"><img src="../src/assets/images/calender.png"></span><p>Overdue</p></li>
-                    <li><span class="image-container"><img src="../src/assets/images/time.png"></span><p>Today</p></li>
-                    <li><span class="image-container"><img src="../src/assets/images/hand-pen.png"></span><p>Tomorrow</p></li>
-                    <li><span class="image-container"><img src="../src/assets/images/cloud.png"></span><p>This week</p></li>
-                    <li><span class="image-container"><img src="../src/assets/images/crystal-ball.png"></span><p>Upcoming</p></li>
-                </ul> 
-            </div>
+    
+    <div class="projects-container">
+
+        <form class="project-form">
+            <button id="create-proj"> Create new project </button>
+            <input type="text" id="projName">
+        </form>
+
+        <ul class="projects-list">
+            <li class="projects-item">Default</div>
+        </ul>
+    </div>
+
+    <div class="task-container">
+        
+        <form class="task-form">
+            <button id="create-task"> Create new task </button>
+            Task Name:
+            <input type="text" id="taskName">
+            Task Subtitle:
+            <input type="text" id="taskSubtitle">
+            Task Description:
+            <input type="textarea" id="taskDesc">
+            Task Due Date:
+            <input type="date" class="" id="taskDue">
+            Task Priority:
+            <select id="task-priority">
+                <option value="priority-one" selected>1</option>
+                <option value="priority-two">2</option>
+                <option value="priority-three">3</option>
+                <option value="priority-four">4</option>
+                <option value="priority-five">5</option>
+              </select>
+        </form>
+
+        <div class="task-list">
+            <!-- <div class="task-item">
+                <div class="taskTitle">
+                    <h1>Title</h1>
+                    <h3>Subtitle</h3>
+                </div>
+
+                <div class="taskDue">
+                    <p>02-03-2020</p>
+                </div>
+
+                <div class="taskPriority">
+                    <p>3</p>
+                </div>
+
+                <div class="taskDesc">
+
+                </div>
+
+                <div class="taskDelete">
+                    X
+                </div>
+            </div> -->
         </div>
 
-        <div class="main-container flex-container flex-col flex-item">
-            <div class="header flex-item">
-                <h2> - YOUR TASK MANAGER - </h2>
-            </div>
-
-            <div class="task-manager-container flex-item">
-                
-                <div class="overdue">
-                    <h3>Overdue</h3>
-                </div>
-
-                <div class="today">
-                    <h3> Today </h3>
-
-                    <div class="task-container">
-                        <span class="date">25/01/2020</span>
-                        <span class="title"> Buy groceries </span>
-                        <span class="description"> Buy eggs, vegetables and milk</span>
-                    </div>
-
-                    <div class="task-container">
-                        <span class="date">25/01/2020</span>
-                        <span class="title"> Do the dishes </span>
-                        <span class="description"> Rinse everything </span>
-                    </div>
-                </div>
-
-                <div class="tomorrow">
-                    <h3>Tomorrow</h3>
-
-                    <div class="task-container">
-                        <span class="date">25/01/2020</span>
-                        <span class="title"> Finish homework </span>
-                        <span class="description"> Why is there so much </span>
-                    </div>
-
-                    <div class="task-container">
-                        <span class="date">25/01/2020</span>
-                        <span class="title"> Finish homework </span>
-                        <span class="description"> Why is there so much </span>
-                    </div>
-
-                    <div class="task-container">
-                        <span class="date">25/01/2020</span>
-                        <span class="title"> Finish homework </span>
-                        <span class="description"> Why is there so much </span>
-                    </div>
-
-                    <div class="task-container">
-                        <span class="date">25/01/2020</span>
-                        <span class="title"> Finish homework </span>
-                        <span class="description"> Why is there so much </span>
-                    </div>
-
-                    <div class="task-container">
-                        <span class="date">25/01/2020</span>
-                        <span class="title"> Finish homework </span>
-                        <span class="description"> Why is there so much </span>
-                    </div>
-
-                    <div class="task-container">
-                        <span class="date">25/01/2020</span>
-                        <span class="title"> Finish homework </span>
-                        <span class="description"> Why is there so much </span>
-                    </div>
-
-                    <div class="task-container">
-                        <span class="date">25/01/2020</span>
-                        <span class="title"> Finish homework </span>
-                        <span class="description"> Why is there so much </span>
-                    </div>
-
-                    <div class="task-container">
-                        <span class="date">25/01/2020</span>
-                        <span class="title"> Finish homework </span>
-                        <span class="description"> Why is there so much </span>
-                    </div>
-                    
-                    
-                </div>
-                <div class="this-week">
-                    <h3>This week </h3>
-                </div>
-                <div class="upcoming">
-                    <h3>Upcoming </h3>
-                </div>
-                
-
-            </div>
-        </div>  
+        
     </div>
 
     <script src="main.js"></script>
