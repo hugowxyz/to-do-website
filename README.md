@@ -10,5 +10,7 @@ Features:
 
 Images:
 
+Homework Project:
 ![](https://github.com/hugowxyz/to-do-website/blob/master/screehshots/1.PNG)
+Other Project:
 ![](https://github.com/hugowxyz/to-do-website/blob/master/screehshots/2.PNG)
